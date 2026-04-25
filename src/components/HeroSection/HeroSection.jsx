@@ -1,22 +1,20 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { HiPhone, HiCalendar } from 'react-icons/hi';
-// আপনার ইমেজটি এখানে ইমপোর্ট করা আছে
-import clothimage from "../../assets/Fresh Clothes.jpeg"; 
+import clothimage from "../../assets/Fresh Clothes.jpeg";
 
 const HeroSection = () => {
     return (
         <section className="relative h-screen w-full overflow-hidden flex items-center">
-            
+
             {/* Background Container */}
             <div className="absolute inset-0 z-0">
-                {/* যদি আপনার কাছে ভিডিও থাকে তবে ভিডিও ট্যাগটি আন-কমেন্ট করবেন, 
-                    নতুবা নিচের এই ইমেজ ট্যাগটিই প্রিমিয়াম লুক দিবে */}
-                <motion.img 
+
+                <motion.img
                     initial={{ scale: 1.1 }}
                     animate={{ scale: 1 }}
                     transition={{ duration: 10, repeat: Infinity, repeatType: "reverse" }}
-                    src={clothimage} 
+                    src={clothimage}
                     alt="Bubbles Laundromat" 
                     className="w-full h-full object-cover"
                 />
