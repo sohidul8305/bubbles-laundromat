@@ -6,8 +6,8 @@ import RootLayouts from "../RootLayouts/RootLayouts";
 // Pages
 import Home from "../Pages/Home";
 import About from "../Pages/About";
-import Services from "../Pages/Services";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
+import Service from "../Pages/Service";
 
 // Router
 export const router = createBrowserRouter([
@@ -18,7 +18,7 @@ export const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: "about", element: <About /> },
-      { path: "services", element: <Services /> },
+      { path: "service", element: <Service /> },
     ],
   },
 ]);
