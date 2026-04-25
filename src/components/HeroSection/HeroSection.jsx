@@ -9,13 +9,14 @@ const HeroSection = () => {
 
             {/* Background Container */}
             <div className="absolute inset-0 z-0">
-
+                {/* যদি আপনার কাছে ভিডিও থাকে তবে ভিডিও ট্যাগটি আন-কমেন্ট করবেন,
+                    নতুবা নিচের এই ইমেজ ট্যাগটিই প্রিমিয়াম লুক দিবে */}
                 <motion.img
                     initial={{ scale: 1.1 }}
                     animate={{ scale: 1 }}
                     transition={{ duration: 10, repeat: Infinity, repeatType: "reverse" }}
-                    src={clothimage}
-                    alt="Bubbles Laundromat"
+                    src={clothimage} 
+                    alt="Bubbles Laundromat" 
                     className="w-full h-full object-cover"
                 />
                 

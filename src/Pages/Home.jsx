@@ -10,7 +10,7 @@ import AppDownload from '../components/AppDownload/AppDownload';
 
 const Home = () => {
     return (
-        <div className="pt-32 pb-20 text-center">
+        <div className="w-full">
            <HeroSection></HeroSection>
            <Services></Services>
            <WhyChooseUs></WhyChooseUs>
