@@ -15,7 +15,7 @@ const HeroSection = () => {
                     animate={{ scale: 1 }}
                     transition={{ duration: 10, repeat: Infinity, repeatType: "reverse" }}
                     src={clothimage}
-                    alt="Bubbles Laundromat" 
+                    alt="Bubbles Laundromat"
                     className="w-full h-full object-cover"
                 />
                 

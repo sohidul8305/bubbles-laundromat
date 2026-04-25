@@ -8,6 +8,7 @@ import Home from "../Pages/Home";
 import About from "../Pages/About";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
 import Service from "../Pages/Service";
+import Prices from "../components/Prices/Prices";
 
 // Router
 export const router = createBrowserRouter([
@@ -19,6 +20,7 @@ export const router = createBrowserRouter([
       { index: true, element: <Home /> },
       { path: "about", element: <About /> },
       { path: "service", element: <Service /> },
+      { path: "pricing", element: <Prices /> },
     ],
   },
 ]);
