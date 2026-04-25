@@ -4,17 +4,16 @@ import Footer from "../components/Footer/Footer";
 
 const RootLayouts = () => {
     return (
-
-
-        <div className="flex flex-col min-h-screen w-full overflow-x-hidden bg-[#0f1115] selection:bg-blue-500/30">
+        /* bg-white: সব পেজের জন্য সাদা ব্যাকগ্রাউন্ড। 
+           selection:bg-blue-100: সাদা থিমের সাথে সামঞ্জস্যপূর্ণ সিলেকশন কালার।
+        */
+        <div className="flex flex-col min-h-screen w-full overflow-x-hidden bg-white selection:bg-blue-100">
             
-
-            <div className="fixed top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-blue-600/5 blur-[120px] pointer-events-none z-0"></div>
-
-            <div className="fixed bottom-[-10%] right-[-10%] w-[30%] h-[30%] rounded-full bg-cyan-600/5 blur-[100px] pointer-events-none z-0"></div>
+            {/* হালকা ডেকোরেটিভ গ্লো (সাদা থিমের জন্য অপ্টিমাইজড) */}
+            <div className="fixed top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-blue-50 blur-[120px] pointer-events-none z-0"></div>
 
             {/* Navbar Section */}
-            <div className="relative z-50">
+            <div className="relative z-50 shadow-sm bg-white/80 backdrop-blur-md">
                 <Navbar />
             </div>
 
@@ -24,7 +23,7 @@ const RootLayouts = () => {
             </main>
 
             {/* Footer Section */}
-            <div className="relative z-10">
+            <div className="relative z-10 border-t border-gray-100 bg-gray-50/50">
                 <Footer />
             </div>
         </div>
