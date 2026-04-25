@@ -3,6 +3,9 @@ import HeroSection from '../../components/HeroSection/HeroSection';
 import Services from '../../components/Services/Services';
 import WhyChooseUs from '../../components/WhyChooseUs/WhyChooseUs';
 import Pricing from '../../components/Pricing/Pricing';
+import Testimonials from '../../components/Testimonials/Testimonials';
+import Contact from '../../components/Contact/Contact';
+import HowItWorks from '../../components/HowItWorks/HowItWorks';
 
 const Home = () => {
     return (
@@ -10,7 +13,10 @@ const Home = () => {
            <HeroSection></HeroSection>
            <Services></Services>
            <WhyChooseUs></WhyChooseUs>
+           <HowItWorks></HowItWorks>
            <Pricing></Pricing>
+           <Testimonials></Testimonials>
+           <Contact></Contact>
         </div>
     );
 };
